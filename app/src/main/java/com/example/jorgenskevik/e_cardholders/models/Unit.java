@@ -1,6 +1,5 @@
 package com.example.jorgenskevik.e_cardholders.models;
 
-import com.digits.sdk.android.models.Email;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
@@ -82,32 +81,9 @@ public class Unit {
         return small_unit_logo;
     }
 
-    public void setSmall_unit_logo(String small_unit_logo) {
-        this.small_unit_logo = small_unit_logo;
-    }
 
     public String getCard_type() {
         return card_type;
-    }
-
-    public void setCard_type(String card_type) {
-        this.card_type = card_type;
-    }
-
-    public String getAuthentication_type() {
-        return authentication_type;
-    }
-
-    public void setAuthentication_type(String authentication_type) {
-        this.authentication_type = authentication_type;
-    }
-
-    public Date getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(Date createdAt) {
-        this.createdAt = createdAt;
     }
 
     public String getName() {
@@ -118,76 +94,20 @@ public class Unit {
         this.name = name;
     }
 
-    public String getOrganisation_number() {
-        return organisation_number;
-    }
-
-    public void setOrganisation_number(String organisation_number) {
-        this.organisation_number = organisation_number;
-    }
-
-    public String getPrivate_contact_email() {
-        return private_contact_email;
-    }
-
-    public void setPrivate_contact_email(String private_contact_email) {
-        this.private_contact_email = private_contact_email;
-    }
-
-    public String getPrivate_contact_name() {
-        return private_contact_name;
-    }
-
-    public void setPrivate_contact_name(String private_contact_name) {
-        this.private_contact_name = private_contact_name;
-    }
-
     public String getPublic_contact_email() {
         return public_contact_email;
-    }
-
-    public void setPublic_contact_email(String public_contact_email) {
-        this.public_contact_email = public_contact_email;
     }
 
     public String getPublic_contact_phone() {
         return public_contact_phone;
     }
 
-    public void setPublic_contact_phone(String public_contact_phone) {
-        this.public_contact_phone = public_contact_phone;
-    }
-
     public String getShort_name() {
         return short_name;
     }
 
-    public void setShort_name(String short_name) {
-        this.short_name = short_name;
-    }
-
     public String getUnit_logo() {
         return unit_logo;
-    }
-
-    public void setUnit_logo(String unit_logo) {
-        this.unit_logo = unit_logo;
-    }
-
-    public Date getUpdated_at() {
-        return updated_at;
-    }
-
-    public void setUpdated_at(Date updated_at) {
-        this.updated_at = updated_at;
-    }
-
-    public Date getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(Date created_at) {
-        this.created_at = created_at;
     }
 
     public int getId() {

@@ -17,21 +17,20 @@
         android:layout_centerHorizontal="true"
         android:elevation="26dp"
         android:layout_marginTop="30dp"
-        android:text="@string/school_sertifivcat" />
+        android:text="@string/member_sertificat" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@drawable/valid"
-        android:layout_marginEnd="30dp"
-        android:elevation="25dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginBottom="60dp"
-        android:id="@+id/view">
-    </View>
+        android:background="@drawable/valid"
+        android:elevation="25dp"></View>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -69,79 +68,70 @@
         android:textColor="@color/black"
         android:textSize="20sp" />
 
-    <ImageView
-        android:id="@+id/short_logo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_alignBottom="@+id/view"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp"
-        android:elevation="25dp"
-        android:src="@drawable/akalogo" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/view"
         android:layout_below="@+id/textView11"
+        android:layout_alignStart="@+id/view"
         android:layout_marginStart="20dp"
-        android:fontFamily="sans-serif"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:elevation="26dp"
         android:layout_marginTop="45dp"
-        android:text="@string/school_this" />
+        android:elevation="26dp"
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView12"
         android:layout_below="@+id/textView12"
+        android:layout_alignStart="@+id/textView12"
         android:layout_marginTop="45dp"
-        android:fontFamily="sans-serif"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:elevation="26dp"
-        android:text="@string/studentnumber" />
+        android:fontFamily="sans-serif"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <View
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="1dp"
-        android:elevation="25dp"
-        android:background="@color/line_color"
         android:layout_below="@+id/textView12"
-        android:layout_marginTop="22dp"
         android:layout_alignStart="@+id/textView12"
-        android:layout_alignEnd="@+id/textView16" />
+        android:layout_alignEnd="@+id/textView16"
+        android:layout_marginTop="22dp"
+        android:background="@color/line_color"
+        android:elevation="25dp" />
 
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:elevation="26dp"
-        android:text="TextView"
-        android:layout_marginEnd="20dp"
         android:layout_above="@+id/textView14"
-        android:layout_alignEnd="@+id/view" />
+        android:layout_alignEnd="@+id/view"
+        android:layout_marginEnd="20dp"
+        android:elevation="26dp"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView13"
         android:layout_alignEnd="@+id/view"
         android:layout_marginEnd="20dp"
-        android:layout_alignTop="@+id/textView13"
-        android:fontFamily="sans-serif"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:elevation="26dp"
-        android:text="TextView" />
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView2"

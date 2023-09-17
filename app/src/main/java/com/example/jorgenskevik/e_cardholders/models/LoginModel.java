@@ -49,15 +49,8 @@ public class LoginModel {
         return unitMembership;
     }
 
-    public void setUnitMembership(UnitMembership unitMembership) {
-        this.unitMembership = unitMembership;
-    }
-
     public String getAuth_token() {
         return auth_token;
     }
 
-    public void setAuth_token(String auth_token) {
-        this.auth_token = auth_token;
-    }
 }

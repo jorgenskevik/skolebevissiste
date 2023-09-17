@@ -3,9 +3,6 @@ package com.example.jorgenskevik.e_cardholders;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.Image;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -16,26 +13,19 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.Filter;
 import android.widget.Filterable;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import com.example.jorgenskevik.e_cardholders.Variables.KVTVariables;
 import com.example.jorgenskevik.e_cardholders.models.Unit;
 import com.example.jorgenskevik.e_cardholders.remote.UserAPI;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.squareup.picasso.Picasso;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -54,7 +44,7 @@ public class MainActivity extends Activity {
     String picture;
 
 
-    private ArrayList<Unit> mProductArrayList = new ArrayList<Unit>();
+    private final ArrayList<Unit> mProductArrayList = new ArrayList<Unit>();
     private MyAdapter adapter1;
 
 
@@ -95,7 +85,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onResume() {
+    public void onResume() {
         // TODO Auto-generated method stub
         super.onResume();
 
@@ -109,15 +99,14 @@ public class MainActivity extends Activity {
         UserAPI userapi = retrofit.create(UserAPI.class);
         userapi.getSchools().enqueue(new Callback<List<Unit>>() {
             @Override
-            public void onResponse(Call<List<Unit>> call, Response<List<Unit>> response) {
+            public void onResponse(@NonNull Call<List<Unit>> call, @NonNull Response<List<Unit>> response) {
                 List<Unit> unit = response.body();
-                for (int i = 0; i < unit.size() ; i++) {
-                    mProductArrayList.add(unit.get(i));
-                }
+                assert unit != null;
+                mProductArrayList.addAll(unit);
             }
 
             @Override
-            public void onFailure(Call<List<Unit>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Unit>> call, @NonNull Throwable t) {
             }
         });
 
@@ -174,14 +163,11 @@ public class MainActivity extends Activity {
             }
             picture = mDisplayedValues.get(position).getUnit_logo();
             holder.tvName.setText(mDisplayedValues.get(position).getName());
-            holder.llContainer.setOnClickListener(new View.OnClickListener() {
-
-                public void onClick(View v) {
-                    Intent intent_loggin = new Intent(MainActivity.this, LoginActivity.class);
-                    unit_id = mDisplayedValues.get(position).getId();
-                    intent_loggin.putExtra("unit_id_i_need", unit_id);
-                    startActivity(intent_loggin);
-                }
+            holder.llContainer.setOnClickListener(v -> {
+                Intent intent_loggin = new Intent(MainActivity.this, LoginActivity.class);
+                unit_id = mDisplayedValues.get(position).getId();
+                intent_loggin.putExtra("unit_id_i_need", unit_id);
+                startActivity(intent_loggin);
             });
 
             return convertView;
@@ -202,18 +188,12 @@ public class MainActivity extends Activity {
                 @Override
                 protected FilterResults performFiltering(CharSequence constraint) {
                     FilterResults results = new FilterResults();        // Holds the results of a filtering operation in values
-                    ArrayList<Unit> FilteredArrList = new ArrayList<Unit>();
+                    ArrayList<Unit> FilteredArrList = new ArrayList<>();
 
                     if (mOriginalValues == null) {
-                        mOriginalValues = new ArrayList<Unit>(mDisplayedValues); // saves the original data in mOriginalValues
+                        mOriginalValues = new ArrayList<>(mDisplayedValues); // saves the original data in mOriginalValues
                     }
 
-                    /********
-                     *
-                     *  If constraint(CharSequence that is received) is null returns the mOriginalValues(Original) values
-                     *  else does the Filtering and returns FilteredArrList(Filtered)
-                     *
-                     ********/
                     if (constraint == null || constraint.length() == 0) {
 
                         // set the Original result to return

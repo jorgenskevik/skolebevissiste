@@ -89,6 +89,12 @@
     <string name="search_school">Søk etter din skole</string>
     <string name="school_sertifivcat">Skolebevis</string>
     <string name="student_sertificat">Studentbevis</string>
+    <string name="member_sertificat">Medlemsbevis</string>
+    <string name="memberNumber">Medlemsnummer</string>
+    <string name="blueskontakt">Kontakt info</string>
+    <string name="blueskonsert">Konsertprogram</string>
+    <string name="noInternet">Koble til internett for å logge inn</string>
+    <string name="failedInternet">Koble til internett for å logge inn</string>
     <string name="four_digits">Skriv inn firesifret bildekode her</string>
     <string name="set_profil_picture">Sett profilbilde</string>
     <string name="your_picture">Slik vil bilde ditt se ut, trykk på tilbake for å velge et annet bilde eller fortsett for å godkjenne</string>

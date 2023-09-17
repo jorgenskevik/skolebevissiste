@@ -18,35 +18,8 @@ public class FirebaseLoginModel {
     @Expose
     public String firebase_token;
 
-    /**
-     * Gets token.
-     *
-     * @return the token
-     */
-
     public FirebaseLoginModel(String phone, String firebase_token){
         this.phone = phone;
-        this.firebase_token = firebase_token;
-    }
-
-
-    public String getPhone() {
-        return phone;
-    }
-
-    /**
-     * Sets token.
-     *
-     */
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getFirebase_token() {
-        return firebase_token;
-    }
-
-    public void setFirebase_token(String firebase_token) {
         this.firebase_token = firebase_token;
     }
 }

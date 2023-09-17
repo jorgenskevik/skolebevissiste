@@ -7,12 +7,14 @@
     <string name="Sendanemail">Email:</string>
     <string name="Callus">Phone:</string>
     <string name="Terms">Terms</string>
+    <string name="school_tis">School</string>
     <string name="Picture">Picture</string>
     <string name="termsdescription1">This app will display your name, place of study and the validity of your digital student card. The app will display a photo of you if you choose to select one. The app will function as a student card and can be used as identification for services your place of study has an agreement with. First time usage requires you to be connected to WiFi or a cellular connection to download the information required to display the student card. This information will be stored locally on the app. KortFri does not take any responsibility for tickets, abuse or any usage that violates Norwegian or international laws. The photos uploaded on this app will be deleted from our database once you as a user are deleted from our systems. Users with admin-rights to the KortFri system have the possibility to delete users. Usually this will be the IT-responsible at? your place of study. The card will be valid for one semester at a time before it has to get updated, the spring semester reaches from 01.01-31.07 and the fall semester from 01.08-31.12.</string>
     <string name="termsdescription2">Are you 15 or older, and do you accept our terms of use?</string>
     <string name="termsdescription3">The card will be valid for one semester at a time before it has to get updated, the spring semester reaches from 01.01-31.07 and the fall semester from 01.08-31.12.</string>
     <string name="barcode">Barcode</string>
     <string name="studentcard">Student card</string>
+    <string name="member_sertificat">Member card</string>
     <string name="closeSettings">Cancel</string>
     <string name="Loggout">Log out</string>
     <string name="moreInfo">Contact IT support to get yur code</string>
@@ -22,8 +24,11 @@
     <string name="GiveAccess">"Give the app access: settings/apps/KortFri/Storage"</string>
     <string name="setPicture">Set picture</string>
     <string name="updateProfile">Update</string>
+    <string name="memberNumber">Member number</string>
     <string name="DenyPicture">You have already picked a photo</string>
     <string name="userUpdated">User updated</string>
+    <string name="blueskontakt">Contact info</string>
+    <string name="blueskonsert">Concert program</string>
     <string name="userNotUpdated">Could not update user</string>
     <string name="pictureNotAvailable">Picture not available</string>
     <string name="PictureNotUpdated">Could not update picture</string>
@@ -71,6 +76,8 @@
     <string name="verification">verification successful</string>
     <string name="landskode">Country Code:</string>
     <string name="nonet">Connect to Wifi</string>
+    <string name="noInternet">Connect to internet to login</string>
+    <string name="failedInternet">Connect to internet to login</string>
     <string name="Yes">Yes</string>
     <string name="Fri">Fri</string>
     <string name="godkjenn">Accept &amp; Continue</string>

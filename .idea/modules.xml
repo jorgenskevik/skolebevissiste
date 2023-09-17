@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/skolebevis.iml" filepath="$PROJECT_DIR$/skolebevis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/skolebevis.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/skolebevis.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/skolebevis.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/skolebevis.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/skolebevis.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/skolebevis.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/skolebevis.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/skolebevis.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library/skolebevis.library.iml" filepath="$PROJECT_DIR$/.idea/modules/library/skolebevis.library.iml" />
     </modules>
   </component>
 </project>

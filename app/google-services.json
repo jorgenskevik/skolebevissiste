@@ -15,11 +15,27 @@
       },
       "oauth_client": [
         {
+          "client_id": "270444705974-dfl72sfbi72uasb6vl4mm4jld0cpnjsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "akatrh.kortfriskolebevis",
+            "certificate_hash": "43e388490097f4fc67000824bf69f38cc58631fb"
+          }
+        },
+        {
           "client_id": "270444705974-fsd9jk0b150gnneplcgn9dcu3uftllgu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "akatrh.kortfriskolebevis",
             "certificate_hash": "68a126056c122b42f22235d0d07e80cc49f76682"
+          }
+        },
+        {
+          "client_id": "270444705974-r0glrcnk7qcogv8s34drjv8mgkq60i9i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "akatrh.kortfriskolebevis",
+            "certificate_hash": "d04d6e0cf085328fa11c9ee13fea58663f8441a5"
           }
         },
         {
@@ -33,20 +49,21 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
               "client_id": "270444705974-0vt17db9vcft6f3f11tljpqjjfudtiio.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "270444705974-aul2nkq0gcilguetbf04ekae55umlgrt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.kortfrinorge.kortfri-skole",
+                "app_store_id": "1276001485"
+              }
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4.2"
-        android:background="@color/tw__solid_white"
+        android:background="@color/background"
         android:gravity="center_horizontal"
         android:orientation="vertical">
 
@@ -75,7 +75,7 @@
         android:layout_height="0dp"
         android:layout_weight="1.8"
         android:alpha="0.9"
-        android:background="@color/tw__solid_white"
+        android:background="@color/background"
         android:gravity="center_vertical">
 
         <LinearLayout

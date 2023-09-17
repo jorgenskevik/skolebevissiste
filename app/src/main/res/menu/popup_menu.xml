@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/loggOut"
+        android:title="@string/Loggout" />
+    <item android:id="@+id/barcode"
+        android:title="@string/barcode" />
+    <item android:id="@+id/setPicture"
+        android:title="@string/setPicture" />
+    <item android:id="@+id/updateProfile"
+        android:title="@string/updateProfile" />
+    <item android:id="@+id/policy"
+        android:title="@string/policy" />
+</menu>

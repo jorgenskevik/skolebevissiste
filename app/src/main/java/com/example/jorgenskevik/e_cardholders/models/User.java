@@ -65,7 +65,6 @@ public class User {
     @Expose
     private Date created_at;
 
-
     public String getId() {
         return id;
     }
@@ -78,40 +77,16 @@ public class User {
         return first_name;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
-    }
-
     public String getLast_name() {
         return last_name;
-    }
-
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
     public String getPicture_token() {
         return picture_token;
-    }
-
-    public void setPicture_token(String picture_token) {
-        this.picture_token = picture_token;
     }
 
     public String getPicture() {
@@ -126,24 +101,8 @@ public class User {
         return user_role;
     }
 
-    public void setUser_role(int user_role) {
-        this.user_role = user_role;
-    }
-
     public Date getDate_of_birth() {
         return date_of_birth;
-    }
-
-    public void setDate_of_birth(Date date_of_birth) {
-        this.date_of_birth = date_of_birth;
-    }
-
-    public boolean isHas_logged_in() {
-        return has_logged_in;
-    }
-
-    public void setHas_logged_in(boolean has_logged_in) {
-        this.has_logged_in = has_logged_in;
     }
 
     public boolean isHas_set_picture() {
@@ -152,22 +111,6 @@ public class User {
 
     public void setHas_set_picture(boolean has_set_picture) {
         this.has_set_picture = has_set_picture;
-    }
-
-    public Date getUpdated_at() {
-        return updated_at;
-    }
-
-    public void setUpdated_at(Date updated_at) {
-        this.updated_at = updated_at;
-    }
-
-    public Date getCreated_at() {
-        return created_at;
-    }
-
-    public void setCreated_at(Date created_at) {
-        this.created_at = created_at;
     }
 
     public String getFullName(){

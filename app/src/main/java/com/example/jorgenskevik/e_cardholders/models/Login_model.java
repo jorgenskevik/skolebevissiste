@@ -46,7 +46,4 @@ public class Login_model {
         return unitMembership;
     }
 
-    public void setUnitMembership(UnitMembership unitMembership) {
-        this.unitMembership = unitMembership;
-    }
 }

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
-    android:background="@color/tw__solid_white"
+    android:background="@color/background"
     android:paddingTop="0dp">
 
 
